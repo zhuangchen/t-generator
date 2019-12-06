@@ -1,0 +1,36 @@
+{
+  "name": "t-generator",
+  "version": "1.0.1-beta.3",
+  "description": "create-template",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "build": "tsc --version && tsc",
+    "test": "jest"
+  },
+  "bin": {
+    "tg": "dist/src/bin/ct-shell.js"
+  },
+  "author": "zhuangchen",
+  "email": "897358140@163.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babybazc/t-generator.git"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "commander": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.14",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.3"
+  }
+}
