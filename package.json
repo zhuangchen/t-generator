@@ -5,6 +5,7 @@
   "main": "dist/src/index.js",
   "scripts": {
     "build": "tsc --version && tsc",
+    "build:prod": "mkdir -p dist && tsc",
     "test": "nyc ./node_modules/.bin/ava -v",
     "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "standard": "standard index.js"
