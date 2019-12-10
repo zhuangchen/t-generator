@@ -8,8 +8,8 @@ script:
 before_deploy: "echo 'start'"
 deploy:
   provider: npm
-  email: "NPM_EMAIL_ADDRESS"
-  api_key: "NPM_AUTH_TOKEN"
+  email: $NPM_EMAIL_ADDRESS
+  api_key: $NPM_AUTH_TOKEN
   tag: next
   on:
     branch: master
