@@ -5,14 +5,12 @@ install:
   - npm ci
 script:
   - npm run docs:build
+before_deploy: "echo 'start'"
 deploy:
-  name: $NAME
-  email: $EMAIL
-  fqdn: $DOMAIN
-  provider: pages
-  skip-cleanup: true
-  local_dir: docs/.vuepress/dist
-  github-token: $GITHUB_TOKEN # a token generated on github allowing travis to push code on you repository
-  keep-history: true
+  provider: npm
+  email: "NPM_EMAIL_ADDRESS"
+  api_key: "NPM_AUTH_TOKEN"
+  tag: next
   on:
     branch: master
+after_deploy: "echo 'finish?'"

@@ -5,7 +5,9 @@
   "main": "dist/src/index.js",
   "scripts": {
     "build": "tsc --version && tsc",
-    "test": "jest"
+    "test": "nyc ./node_modules/.bin/ava -v",
+    "report-coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
+    "standard": "standard index.js"
   },
   "bin": {
     "tg": "dist/src/bin/ct-shell.js"
@@ -31,6 +33,15 @@
     "jest": "^24.9.0",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.3",
+    "ava": "^0.16.0",
+    "co-exec": "^1.0",
+    "codecov": "^1.0.1",
+    "ghooks": "^1.2.4",
+    "nyc": "^10.0.0",
+    "standard": "^8.4.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
