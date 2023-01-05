@@ -35,7 +35,7 @@
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.7.3",
-    "ava": "^0.16.0",
+    "ava": "^5.1.0",
     "co-exec": "^1.0",
     "codecov": "^3.7.1",
     "ghooks": "^1.2.4",
